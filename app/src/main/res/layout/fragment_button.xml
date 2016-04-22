@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="specialforces.mobile.dynatrace.com.simplehybridapp.ButtonFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Action"
+        android:id="@+id/btnEnterAction"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnReportValueInt" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="report value int"
+        android:id="@+id/btnReportValueInt"
+        android:layout_below="@+id/btnEnterAction"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnReportValueDouble" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report Value Double"
+        android:id="@+id/btnReportValueDouble"
+        android:layout_below="@+id/btnReportValueInt"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report Value String"
+        android:id="@+id/btnReportValueString"
+        android:layout_below="@+id/btnReportValueDouble"
+        android:layout_alignEnd="@+id/btnReportValueDouble" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report Event"
+        android:id="@+id/btnReportEvent"
+        android:layout_below="@+id/btnReportValueString"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnReportValueString" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report Error Int"
+        android:id="@+id/btnReportErrorInt"
+        android:layout_below="@+id/btnReportEvent"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnReportEvent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report Error String"
+        android:id="@+id/btnReportErrorString"
+        android:layout_below="@+id/btnReportErrorInt"
+        android:layout_alignEnd="@+id/btnReportErrorInt" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave Action"
+        android:id="@+id/btnLeaveAction"
+        android:layout_below="@+id/btnReportErrorString"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnReportErrorString" />
+</RelativeLayout>
